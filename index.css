@@ -1,0 +1,54 @@
+body {
+    margin: 0
+}
+
+.tree .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+}
+
+.tree text {
+    fill: white;
+    font: bold 50px sans-serif;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: 1rem;
+    width: 10rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+button:disabled{
+    background-color: gray;
+}
+
+.input-area {
+    height: calc(100% - 510px);
+    width: 100%;
+}
+
+#command-area {
+    position: absolute;
+    left: 12rem;
+    width: 40rem;
+    height: 100%;
+}
+
+#command, #command-history, #stack {
+    font-size: 3rem;
+    width: 100%;
+}
+
+#stack {
+    position: absolute;
+    left: 53rem;
+    margin: 0;
+}
