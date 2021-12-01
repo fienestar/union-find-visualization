@@ -220,9 +220,9 @@ async function processCommand(command)
                 nodes[split[1]] = createNode(uf, split[1])
                 visualize(uf);
                 return [1]
-            case "parent":
+            case "root":
                 if(split.length != 2)
-                    return [0,`arguments.length of command "parent" must be 1`]
+                    return [0,`arguments.length of command "root" must be 1`]
                 if(!nodes[split[1]])
                     return [0, `unknown node: ${split[1]}`]
                 return [1, (await getParent(uf, nodes[split[1]])).name];
