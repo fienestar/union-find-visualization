@@ -13,5 +13,5 @@ union-find 동아리 keeper 발표 자료
   - union by rank 등은 적용되지 않으며 A에 B를 병합합니다.
 - create A:
   - A노드를 생성합니다.
-- parent A:
+- root A:
   - A가 속한 트리의 루트노드를 구하여 출력합니다.
